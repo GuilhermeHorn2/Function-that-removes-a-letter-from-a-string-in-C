@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void rmv(char chr,char word[]){
+    int j = 0;
+    int n = strlen(word);
+    int index;
+
+    for(int i = 0;i < n;i++){
+       if(word[i] != chr){
+        word[j] = word[i];
+        j++;
+       }
+       else{
+        index = i;
+       }
+    word[j] = '\0';
+    }
+}
+
+int main()
+{   char word[] = "batata";
+    rmv('b',word);
+    printf("%s",word);
+
+ return 0;
+}
