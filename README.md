@@ -1,0 +1,1 @@
+# Function-that-removes-a-letter-from-a-string-in-C
